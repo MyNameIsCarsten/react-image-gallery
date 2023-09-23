@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+# Image Search Web App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Image Gallery](image-gallery.jpg)
 
-## Available Scripts
+This is a simple web application that allows users to search for images using a keyword or term. It leverages the Pixabay API to fetch and display images related to the user's search term.
 
-In the project directory, you can run:
+## Skills Showcased
 
-### `npm start`
+This project showcases several skills and concepts in web development, including:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. **React**: The project is built using the React library, demonstrating the ability to create reusable and interactive components.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. **React State Management**: State management in React is demonstrated through the use of the `useState` hook. It manages the state of the image data, loading indicator, and search term.
 
-### `npm test`
+3. **React useEffect Hook**: The `useEffect` hook is used for making asynchronous API requests when the search term changes. This showcases the ability to handle side effects in a React application.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+4. **API Integration**: The project fetches image data from the Pixabay API, showcasing the ability to integrate external APIs into a web application.
 
-### `npm run build`
+5. **Conditional Rendering**: Conditional rendering is used to display loading indicators and messages when no images are found based on the API response.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+6. **Form Handling**: The search form in the `ImageSearch` component demonstrates form handling in React, capturing user input and triggering a search.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+7. **CSS Styling**: The project uses Tailwind CSS for styling, demonstrating the ability to apply styles and create a visually appealing user interface.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## How to Run
 
-### `npm run eject`
+To run this project locally, follow these steps:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Clone the repository to your local machine.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. Install the required dependencies by running:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   ```
+   npm install
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3. Create a `.env` file in the project root and add your Pixabay API key like this:
 
-## Learn More
+   ```
+   REACT_APP_PIXABAY_API_KEY=YOUR_API_KEY_HERE
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   Replace `YOUR_API_KEY_HERE` with your actual Pixabay API key.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+4. Start the development server:
 
-### Code Splitting
+   ```
+   npm start
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+   This will launch the application in your default web browser.
 
-### Analyzing the Bundle Size
+## Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. Enter a search term in the search input field and press the "Search" button.
 
-### Making a Progressive Web App
+2. Images related to your search term will be displayed in a responsive grid.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+3. You can view details about each image, including the photographer's name, views, downloads, likes, and tags.
 
-### Advanced Configuration
+4. Enjoy exploring and searching for images!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Credits
 
-### Deployment
+- This project is built with [Tailwind CSS](https://tailwindcss.com/).
+- This poject is based on a tutorial by [Brad Traversy](https://www.youtube.com/watch?v=FiGmAI5e91M&ab_channel=TraversyMedia).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
